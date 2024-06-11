@@ -1,0 +1,88 @@
+{
+  "description": "A description of a triggering event. Triggering events can be named events, data events, or periodic, as determined by the type element.",
+  "properties": {
+    "id": {
+      "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "extension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "type": {
+      "description": "The type of triggering event.",
+      "enum": [
+        "named-event",
+        "periodic",
+        "data-changed",
+        "data-added",
+        "data-modified",
+        "data-removed",
+        "data-accessed",
+        "data-access-ended"
+      ]
+    },
+    "_type": {
+      "description": "Extensions for type",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "name": {
+      "description": "A formal name for the event. This may be an absolute URI that identifies the event formally (e.g. from a trigger registry), or a simple relative URI that identifies the event in a local context.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "_name": {
+      "description": "Extensions for name",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "code": {
+      "description": "A code that identifies the event.",
+      "$ref": "https://fhir.opennz.org/CodeableConcept"
+    },
+    "subscriptionTopic": {
+      "description": "A reference to a SubscriptionTopic resource that defines the event. If this element is provided, no other information about the trigger definition may be supplied.",
+      "$ref": "https://fhir.opennz.org/canonical"
+    },
+    "timingTiming": {
+      "description": "The timing of the event (if this is a periodic trigger).",
+      "$ref": "https://fhir.opennz.org/Timing"
+    },
+    "timingReference": {
+      "description": "The timing of the event (if this is a periodic trigger).",
+      "$ref": "https://fhir.opennz.org/Reference"
+    },
+    "timingDate": {
+      "description": "The timing of the event (if this is a periodic trigger).",
+      "pattern": "^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$",
+      "type": "string"
+    },
+    "_timingDate": {
+      "description": "Extensions for timingDate",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "timingDateTime": {
+      "description": "The timing of the event (if this is a periodic trigger).",
+      "pattern": "^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]{1,9})?)?)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)?)?)?$",
+      "type": "string"
+    },
+    "_timingDateTime": {
+      "description": "Extensions for timingDateTime",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "data": {
+      "description": "The triggering data of the event (if this is a data trigger). If more than one data is requirement is specified, then all the data requirements must be true.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/DataRequirement"
+      },
+      "type": "array"
+    },
+    "condition": {
+      "description": "A boolean-valued expression that is evaluated in the context of the container of the trigger definition and returns whether or not the trigger fires.",
+      "$ref": "https://fhir.opennz.org/Expression"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false
+}

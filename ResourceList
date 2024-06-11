@@ -1,0 +1,481 @@
+{
+  "oneOf": [
+    {
+      "$ref": "https://fhir.opennz.org/Account"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ActivityDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ActorDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/AdministrableProductDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/AdverseEvent"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/AllergyIntolerance"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Appointment"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/AppointmentResponse"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ArtifactAssessment"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/AuditEvent"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Basic"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Binary"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/BiologicallyDerivedProduct"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/BiologicallyDerivedProductDispense"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/BodyStructure"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Bundle"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/CapabilityStatement"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/CarePlan"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/CareTeam"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ChargeItem"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ChargeItemDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Citation"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Claim"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ClaimResponse"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ClinicalImpression"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ClinicalUseDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/CodeSystem"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Communication"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/CommunicationRequest"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/CompartmentDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Composition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ConceptMap"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Condition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ConditionDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Consent"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Contract"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Coverage"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/CoverageEligibilityRequest"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/CoverageEligibilityResponse"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/DetectedIssue"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Device"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/DeviceAssociation"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/DeviceDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/DeviceDispense"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/DeviceMetric"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/DeviceRequest"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/DeviceUsage"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/DiagnosticReport"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/DocumentReference"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Encounter"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/EncounterHistory"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Endpoint"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/EnrollmentRequest"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/EnrollmentResponse"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/EpisodeOfCare"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/EventDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Evidence"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/EvidenceReport"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/EvidenceVariable"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ExampleScenario"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ExplanationOfBenefit"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/FamilyMemberHistory"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Flag"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/FormularyItem"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/GenomicStudy"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Goal"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/GraphDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Group"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/GuidanceResponse"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/HealthcareService"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ImagingSelection"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ImagingStudy"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Immunization"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ImmunizationEvaluation"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ImmunizationRecommendation"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ImplementationGuide"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Ingredient"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/InsurancePlan"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/InsuranceProduct"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/InventoryItem"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/InventoryReport"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Invoice"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Library"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Linkage"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/List"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Location"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ManufacturedItemDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Measure"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/MeasureReport"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Medication"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/MedicationAdministration"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/MedicationDispense"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/MedicationKnowledge"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/MedicationRequest"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/MedicationStatement"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/MedicinalProductDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/MessageDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/MessageHeader"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/MolecularSequence"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/NamingSystem"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/NutritionIntake"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/NutritionOrder"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/NutritionProduct"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Observation"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ObservationDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/OperationDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/OperationOutcome"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Organization"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/OrganizationAffiliation"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/PackagedProductDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Parameters"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Patient"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/PaymentNotice"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/PaymentReconciliation"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Permission"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Person"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/PlanDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Practitioner"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/PractitionerRole"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Procedure"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Provenance"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Questionnaire"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/QuestionnaireResponse"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/RegulatedAuthorization"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/RelatedPerson"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/RequestOrchestration"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Requirements"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ResearchStudy"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ResearchSubject"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/RiskAssessment"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Schedule"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SearchParameter"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ServiceRequest"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Slot"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Specimen"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SpecimenDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/StructureDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/StructureMap"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Subscription"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SubscriptionStatus"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SubscriptionTopic"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Substance"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SubstanceDefinition"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SubstanceNucleicAcid"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SubstancePolymer"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SubstanceProtein"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SubstanceReferenceInformation"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SubstanceSourceMaterial"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SupplyDelivery"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/SupplyRequest"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Task"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/TerminologyCapabilities"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/TestPlan"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/TestReport"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/TestScript"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/Transport"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/ValueSet"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/VerificationResult"
+    },
+    {
+      "$ref": "https://fhir.opennz.org/VisionPrescription"
+    }
+  ]
+}

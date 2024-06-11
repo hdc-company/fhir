@@ -1,0 +1,70 @@
+{
+  "description": "The details of a healthcare service available at a location.",
+  "properties": {
+    "id": {
+      "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "extension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "modifierExtension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "code": {
+      "description": "Coded value for the eligibility.",
+      "$ref": "https://fhir.opennz.org/CodeableConcept"
+    },
+    "valueCodeableConcept": {
+      "description": "Sometimes an eligibility code requires additional data to calculate the eligibility rules.",
+      "$ref": "https://fhir.opennz.org/CodeableConcept"
+    },
+    "valueBoolean": {
+      "description": "Sometimes an eligibility code requires additional data to calculate the eligibility rules.",
+      "pattern": "^true|false$",
+      "type": "boolean"
+    },
+    "_valueBoolean": {
+      "description": "Extensions for valueBoolean",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueQuantity": {
+      "description": "Sometimes an eligibility code requires additional data to calculate the eligibility rules.",
+      "$ref": "https://fhir.opennz.org/Quantity"
+    },
+    "valueRange": {
+      "description": "Sometimes an eligibility code requires additional data to calculate the eligibility rules.",
+      "$ref": "https://fhir.opennz.org/Range"
+    },
+    "valueReference": {
+      "description": "Sometimes an eligibility code requires additional data to calculate the eligibility rules.",
+      "$ref": "https://fhir.opennz.org/Reference"
+    },
+    "comment": {
+      "description": "Describes the eligibility conditions for the service.",
+      "$ref": "https://fhir.opennz.org/markdown"
+    },
+    "_comment": {
+      "description": "Extensions for comment",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "period": {
+      "description": "The period that this eligibility rule is a requirement for this service.",
+      "$ref": "https://fhir.opennz.org/markdown"
+    },
+    "_period": {
+      "description": "Extensions for period",
+      "$ref": "https://fhir.opennz.org/Element"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false
+}

@@ -1,0 +1,185 @@
+{
+  "description": "The subscription resource describes a particular client's request to be notified about a SubscriptionTopic.",
+  "properties": {
+    "resourceType": {
+      "description": "This is a Subscription resource",
+      "const": "Subscription"
+    },
+    "id": {
+      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+      "$ref": "https://fhir.opennz.org/id"
+    },
+    "meta": {
+      "description": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.",
+      "$ref": "https://fhir.opennz.org/Meta"
+    },
+    "implicitRules": {
+      "description": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.",
+      "$ref": "https://fhir.opennz.org/uri"
+    },
+    "_implicitRules": {
+      "description": "Extensions for implicitRules",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "language": {
+      "description": "The base language in which the resource is written.",
+      "$ref": "https://fhir.opennz.org/code"
+    },
+    "_language": {
+      "description": "Extensions for language",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "text": {
+      "description": "A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+      "$ref": "https://fhir.opennz.org/Narrative"
+    },
+    "contained": {
+      "description": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, nor can they have their own independent transaction scope. This is allowed to be a Parameters resource if and only if it is referenced by a resource that provides context/meaning.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/ResourceList"
+      },
+      "type": "array"
+    },
+    "extension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "modifierExtension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "identifier": {
+      "description": "A formal identifier that is used to identify this code system when it is represented in other formats, or referenced in a specification, model, design or an instance.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Identifier"
+      },
+      "type": "array"
+    },
+    "name": {
+      "description": "A natural language name identifying the subscription.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "_name": {
+      "description": "Extensions for name",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "status": {
+      "description": "The status of the subscription, which marks the server state for managing the subscription.",
+      "$ref": "https://fhir.opennz.org/code"
+    },
+    "_status": {
+      "description": "Extensions for status",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "topic": {
+      "description": "The reference to the subscription topic to be notified about.",
+      "$ref": "https://fhir.opennz.org/canonical"
+    },
+    "contact": {
+      "description": "Contact details for a human to contact about the subscription. The primary use of this for system administrator troubleshooting.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/ContactPoint"
+      },
+      "type": "array"
+    },
+    "end": {
+      "description": "The time for the server to turn the subscription off.",
+      "$ref": "https://fhir.opennz.org/instant"
+    },
+    "_end": {
+      "description": "Extensions for end",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "managingEntity": {
+      "description": "Entity with authorization to make subsequent revisions to the Subscription and also determines what data the subscription is authorized to disclose.",
+      "$ref": "https://fhir.opennz.org/Reference"
+    },
+    "reason": {
+      "description": "A description of why this subscription is defined.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "_reason": {
+      "description": "Extensions for reason",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "filterBy": {
+      "description": "The filter properties to be applied to narrow the subscription topic stream.  When multiple filters are applied, evaluates to true if all the conditions applicable to that resource are met; otherwise it returns false (i.e., logical AND).",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Subscription_FilterBy"
+      },
+      "type": "array"
+    },
+    "channelType": {
+      "description": "The type of channel to send notifications on.",
+      "$ref": "https://fhir.opennz.org/Coding"
+    },
+    "endpoint": {
+      "description": "The url that describes the actual end-point to send notifications to.",
+      "$ref": "https://fhir.opennz.org/url"
+    },
+    "_endpoint": {
+      "description": "Extensions for endpoint",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "parameter": {
+      "description": "Channel-dependent information to send as part of the notification (e.g., HTTP Headers).",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Subscription_Parameter"
+      },
+      "type": "array"
+    },
+    "heartbeatPeriod": {
+      "description": "If present, a 'heartbeat' notification (keep-alive) is sent via this channel with an interval period equal to this elements integer value in seconds.  If not present, a heartbeat notification is not sent.",
+      "$ref": "https://fhir.opennz.org/unsignedInt"
+    },
+    "_heartbeatPeriod": {
+      "description": "Extensions for heartbeatPeriod",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "timeout": {
+      "description": "If present, the maximum amount of time a server will allow before failing a notification attempt.",
+      "$ref": "https://fhir.opennz.org/unsignedInt"
+    },
+    "_timeout": {
+      "description": "Extensions for timeout",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "contentType": {
+      "description": "The MIME type to send the payload in - e.g., `application/fhir+xml` or `application/fhir+json`. Note that:\n\n* clients may request notifications in a specific FHIR version by using the [FHIR Version Parameter](http.html#version-parameter) - e.g., `application/fhir+json; fhirVersion=4.0`.\n\n* additional MIME types can be allowed by channels - e.g., `text/plain` and `text/html` are defined by the Email channel.",
+      "$ref": "https://fhir.opennz.org/code"
+    },
+    "_contentType": {
+      "description": "Extensions for contentType",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "content": {
+      "description": "How much of the resource content to deliver in the notification payload. The choices are an empty payload, only the resource id, or the full resource content.",
+      "$ref": "https://fhir.opennz.org/code"
+    },
+    "_content": {
+      "description": "Extensions for content",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "maxCount": {
+      "description": "If present, the maximum number of events that will be included in a notification bundle. Note that this is not a strict limit on the number of entries in a bundle, as dependent resources can be included.",
+      "$ref": "https://fhir.opennz.org/positiveInt"
+    },
+    "_maxCount": {
+      "description": "Extensions for maxCount",
+      "$ref": "https://fhir.opennz.org/Element"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "topic",
+    "channelType",
+    "resourceType"
+  ]
+}

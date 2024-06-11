@@ -1,0 +1,122 @@
+{
+  "description": "For referring to data content defined in other formats.",
+  "properties": {
+    "id": {
+      "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "extension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "contentType": {
+      "description": "Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.",
+      "$ref": "https://fhir.opennz.org/code"
+    },
+    "_contentType": {
+      "description": "Extensions for contentType",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "language": {
+      "description": "The human language of the content. The value can be any valid value according to BCP 47.",
+      "$ref": "https://fhir.opennz.org/code"
+    },
+    "_language": {
+      "description": "Extensions for language",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "data": {
+      "description": "The actual data of the attachment - a sequence of bytes, base64 encoded.",
+      "$ref": "https://fhir.opennz.org/base64Binary"
+    },
+    "_data": {
+      "description": "Extensions for data",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "url": {
+      "description": "A location where the data can be accessed.",
+      "$ref": "https://fhir.opennz.org/url"
+    },
+    "_url": {
+      "description": "Extensions for url",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "size": {
+      "description": "The number of bytes of data that make up this attachment (before base64 encoding, if that is done).",
+      "$ref": "https://fhir.opennz.org/integer64"
+    },
+    "_size": {
+      "description": "Extensions for size",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "hash": {
+      "description": "The calculated hash of the data using SHA-1. Represented using base64.",
+      "$ref": "https://fhir.opennz.org/base64Binary"
+    },
+    "_hash": {
+      "description": "Extensions for hash",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "title": {
+      "description": "A label or set of text to display in place of the data.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "_title": {
+      "description": "Extensions for title",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "creation": {
+      "description": "The date that the attachment was first created.",
+      "$ref": "https://fhir.opennz.org/dateTime"
+    },
+    "_creation": {
+      "description": "Extensions for creation",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "height": {
+      "description": "Height of the image in pixels (photo/video).",
+      "$ref": "https://fhir.opennz.org/positiveInt"
+    },
+    "_height": {
+      "description": "Extensions for height",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "width": {
+      "description": "Width of the image in pixels (photo/video).",
+      "$ref": "https://fhir.opennz.org/positiveInt"
+    },
+    "_width": {
+      "description": "Extensions for width",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "frames": {
+      "description": "The number of frames in a photo. This is used with a multi-page fax, or an imaging acquisition context that takes multiple slices in a single image, or an animated gif. If there is more than one frame, this SHALL have a value in order to alert interface software that a multi-frame capable rendering widget is required.",
+      "$ref": "https://fhir.opennz.org/positiveInt"
+    },
+    "_frames": {
+      "description": "Extensions for frames",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "duration": {
+      "description": "The duration of the recording in seconds - for audio and video.",
+      "$ref": "https://fhir.opennz.org/decimal"
+    },
+    "_duration": {
+      "description": "Extensions for duration",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "pages": {
+      "description": "The number of pages when printed.",
+      "$ref": "https://fhir.opennz.org/positiveInt"
+    },
+    "_pages": {
+      "description": "Extensions for pages",
+      "$ref": "https://fhir.opennz.org/Element"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false
+}

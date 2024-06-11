@@ -1,0 +1,85 @@
+{
+  "description": "Describes a stream of resource state changes or events and annotated with labels useful to filter projections from this topic.",
+  "properties": {
+    "id": {
+      "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "extension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "modifierExtension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "description": {
+      "description": "Description of how this filtering parameter is intended to be used.",
+      "$ref": "https://fhir.opennz.org/markdown"
+    },
+    "_description": {
+      "description": "Extensions for description",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "resource": {
+      "description": "URL of the Resource that is the type used in this filter. This is the \"focus\" of the topic (or one of them if there are more than one). It will be the same, a generality, or a specificity of SubscriptionTopic.resourceTrigger.resource or SubscriptionTopic.eventTrigger.resource when they are present.",
+      "$ref": "https://fhir.opennz.org/uri"
+    },
+    "_resource": {
+      "description": "Extensions for resource",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "filterParameter": {
+      "description": "Either the canonical URL to a search parameter (like \"http://hl7.org/fhir/SearchParameter/encounter-patient\") or topic-defined parameter (like \"hub.event\") which is a label for the filter.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "_filterParameter": {
+      "description": "Extensions for filterParameter",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "filterDefinition": {
+      "description": "Either the canonical URL to a search parameter (like \"http://hl7.org/fhir/SearchParameter/encounter-patient\") or the officially-defined URI for a shared filter concept (like \"http://example.org/concepts/shared-common-event\").",
+      "$ref": "https://fhir.opennz.org/uri"
+    },
+    "_filterDefinition": {
+      "description": "Extensions for filterDefinition",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "comparator": {
+      "description": "Comparators allowed for the filter parameter.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/code"
+      },
+      "type": "array"
+    },
+    "_comparator": {
+      "description": "Extensions for comparator",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Element"
+      },
+      "type": "array"
+    },
+    "modifier": {
+      "description": "Modifiers allowed for the filter parameter.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/code"
+      },
+      "type": "array"
+    },
+    "_modifier": {
+      "description": "Extensions for modifier",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Element"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false
+}

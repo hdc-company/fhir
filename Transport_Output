@@ -1,0 +1,348 @@
+{
+  "description": "Record of transport of item.",
+  "properties": {
+    "id": {
+      "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "extension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "modifierExtension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "type": {
+      "description": "The name of the Output parameter.",
+      "$ref": "https://fhir.opennz.org/CodeableConcept"
+    },
+    "valueBase64Binary": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$",
+      "type": "string"
+    },
+    "_valueBase64Binary": {
+      "description": "Extensions for valueBase64Binary",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueBoolean": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^true|false$",
+      "type": "boolean"
+    },
+    "_valueBoolean": {
+      "description": "Extensions for valueBoolean",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueCanonical": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^\\S*$",
+      "type": "string"
+    },
+    "_valueCanonical": {
+      "description": "Extensions for valueCanonical",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueCode": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^[^\\s]+( [^\\s]+)*$",
+      "type": "string"
+    },
+    "_valueCode": {
+      "description": "Extensions for valueCode",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueDate": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$",
+      "type": "string"
+    },
+    "_valueDate": {
+      "description": "Extensions for valueDate",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueDateTime": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]{1,9})?)?)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)?)?)?$",
+      "type": "string"
+    },
+    "_valueDateTime": {
+      "description": "Extensions for valueDateTime",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueDecimal": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^-?(0|[1-9][0-9]{0,17})(\\.[0-9]{1,17})?([eE][+-]?[0-9]{1,9}})?$",
+      "type": "number"
+    },
+    "_valueDecimal": {
+      "description": "Extensions for valueDecimal",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueId": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+      "type": "string"
+    },
+    "_valueId": {
+      "description": "Extensions for valueId",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueInstant": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]{1,9})?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$",
+      "type": "string"
+    },
+    "_valueInstant": {
+      "description": "Extensions for valueInstant",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueInteger": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^[0]|[-+]?[1-9][0-9]*$",
+      "type": "number"
+    },
+    "_valueInteger": {
+      "description": "Extensions for valueInteger",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueInteger64": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^[0]|[-+]?[1-9][0-9]*$",
+      "type": "string"
+    },
+    "_valueInteger64": {
+      "description": "Extensions for valueInteger64",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueMarkdown": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^^[\\s\\S]+$$",
+      "type": "string"
+    },
+    "_valueMarkdown": {
+      "description": "Extensions for valueMarkdown",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueOid": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^urn:oid:[0-2](\\.(0|[1-9][0-9]*))+$",
+      "type": "string"
+    },
+    "_valueOid": {
+      "description": "Extensions for valueOid",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valuePositiveInt": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^[1-9][0-9]*$",
+      "type": "number"
+    },
+    "_valuePositiveInt": {
+      "description": "Extensions for valuePositiveInt",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueString": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^^[\\s\\S]+$$",
+      "type": "string"
+    },
+    "_valueString": {
+      "description": "Extensions for valueString",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueTime": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]{1,9})?$",
+      "type": "string"
+    },
+    "_valueTime": {
+      "description": "Extensions for valueTime",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueUnsignedInt": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^[0]|([1-9][0-9]*)$",
+      "type": "number"
+    },
+    "_valueUnsignedInt": {
+      "description": "Extensions for valueUnsignedInt",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueUri": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^\\S*$",
+      "type": "string"
+    },
+    "_valueUri": {
+      "description": "Extensions for valueUri",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueUrl": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^\\S*$",
+      "type": "string"
+    },
+    "_valueUrl": {
+      "description": "Extensions for valueUrl",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueUuid": {
+      "description": "The value of the Output parameter as a basic type.",
+      "pattern": "^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+      "type": "string"
+    },
+    "_valueUuid": {
+      "description": "Extensions for valueUuid",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueAddress": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Address"
+    },
+    "valueAge": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Age"
+    },
+    "valueAnnotation": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Annotation"
+    },
+    "valueAttachment": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Attachment"
+    },
+    "valueCodeableConcept": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/CodeableConcept"
+    },
+    "valueCodeableReference": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/CodeableReference"
+    },
+    "valueCoding": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Coding"
+    },
+    "valueContactPoint": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/ContactPoint"
+    },
+    "valueCount": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Count"
+    },
+    "valueDistance": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Distance"
+    },
+    "valueDuration": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Duration"
+    },
+    "valueHumanName": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/HumanName"
+    },
+    "valueIdentifier": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Identifier"
+    },
+    "valueMoney": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Money"
+    },
+    "valuePeriod": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Period"
+    },
+    "valueQuantity": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Quantity"
+    },
+    "valueRange": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Range"
+    },
+    "valueRatio": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Ratio"
+    },
+    "valueRatioRange": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/RatioRange"
+    },
+    "valueReference": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Reference"
+    },
+    "valueSampledData": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/SampledData"
+    },
+    "valueSignature": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Signature"
+    },
+    "valueTiming": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Timing"
+    },
+    "valueContactDetail": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/ContactDetail"
+    },
+    "valueDataRequirement": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/DataRequirement"
+    },
+    "valueExpression": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Expression"
+    },
+    "valueParameterDefinition": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/ParameterDefinition"
+    },
+    "valueRelatedArtifact": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/RelatedArtifact"
+    },
+    "valueTriggerDefinition": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/TriggerDefinition"
+    },
+    "valueUsageContext": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/UsageContext"
+    },
+    "valueAvailability": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Availability"
+    },
+    "valueExtendedContactDetail": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/ExtendedContactDetail"
+    },
+    "valueDosage": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Dosage"
+    },
+    "valueMeta": {
+      "description": "The value of the Output parameter as a basic type.",
+      "$ref": "https://fhir.opennz.org/Meta"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "type"
+  ]
+}

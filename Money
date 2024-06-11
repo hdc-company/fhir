@@ -1,0 +1,34 @@
+{
+  "description": "An amount of economic utility in some recognized currency.",
+  "properties": {
+    "id": {
+      "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "extension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "value": {
+      "description": "Numerical value (with implicit precision).",
+      "$ref": "https://fhir.opennz.org/decimal"
+    },
+    "_value": {
+      "description": "Extensions for value",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "currency": {
+      "description": "ISO 4217 Currency Code.",
+      "$ref": "https://fhir.opennz.org/code"
+    },
+    "_currency": {
+      "description": "Extensions for currency",
+      "$ref": "https://fhir.opennz.org/Element"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false
+}

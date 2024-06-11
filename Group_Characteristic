@@ -1,0 +1,132 @@
+{
+  "description": "Represents a defined collection of entities that may be discussed or acted upon collectively but which are not expected to act collectively, and are not formally or legally recognized; i.e. a collection of entities that isn't an Organization.",
+  "properties": {
+    "id": {
+      "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "extension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "modifierExtension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "code": {
+      "description": "A code that identifies the kind of trait being asserted.",
+      "$ref": "https://fhir.opennz.org/CodeableConcept"
+    },
+    "valueCodeableConcept": {
+      "description": "The value of the trait that holds (or does not hold - see 'exclude') for members of the group.",
+      "$ref": "https://fhir.opennz.org/CodeableConcept"
+    },
+    "valueBoolean": {
+      "description": "The value of the trait that holds (or does not hold - see 'exclude') for members of the group.",
+      "pattern": "^true|false$",
+      "type": "boolean"
+    },
+    "_valueBoolean": {
+      "description": "Extensions for valueBoolean",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueQuantity": {
+      "description": "The value of the trait that holds (or does not hold - see 'exclude') for members of the group.",
+      "$ref": "https://fhir.opennz.org/Quantity"
+    },
+    "valueRange": {
+      "description": "The value of the trait that holds (or does not hold - see 'exclude') for members of the group.",
+      "$ref": "https://fhir.opennz.org/Range"
+    },
+    "valueReference": {
+      "description": "The value of the trait that holds (or does not hold - see 'exclude') for members of the group.",
+      "$ref": "https://fhir.opennz.org/Reference"
+    },
+    "valueUri": {
+      "description": "The value of the trait that holds (or does not hold - see 'exclude') for members of the group.",
+      "pattern": "^\\S*$",
+      "type": "string"
+    },
+    "_valueUri": {
+      "description": "Extensions for valueUri",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "valueExpression": {
+      "description": "The value of the trait that holds (or does not hold - see 'exclude') for members of the group.",
+      "$ref": "https://fhir.opennz.org/Expression"
+    },
+    "exclude": {
+      "description": "If true, indicates the characteristic is one that is NOT held by members of the group.",
+      "$ref": "https://fhir.opennz.org/boolean"
+    },
+    "_exclude": {
+      "description": "Extensions for exclude",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "description": {
+      "description": "A short, natural language description of the characteristic that could be used to communicate the criteria to an end-user.",
+      "$ref": "https://fhir.opennz.org/markdown"
+    },
+    "_description": {
+      "description": "Extensions for description",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "method": {
+      "description": "Method for how the characteristic value was determined.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/CodeableConcept"
+      },
+      "type": "array"
+    },
+    "determinedByReference": {
+      "description": "Defines the characteristic (without using type and value) by either a Reference or an Expression.",
+      "$ref": "https://fhir.opennz.org/Reference"
+    },
+    "determinedByExpression": {
+      "description": "Defines the characteristic (without using type and value) by either a Reference or an Expression.",
+      "$ref": "https://fhir.opennz.org/Expression"
+    },
+    "offset": {
+      "description": "Defines the reference point for comparison when other than 0.",
+      "$ref": "https://fhir.opennz.org/CodeableConcept"
+    },
+    "instancesQuantity": {
+      "description": "Number of occurrences meeting the characteristic.",
+      "$ref": "https://fhir.opennz.org/Quantity"
+    },
+    "instancesRange": {
+      "description": "Number of occurrences meeting the characteristic.",
+      "$ref": "https://fhir.opennz.org/Range"
+    },
+    "durationDuration": {
+      "description": "Length of time in which the characteristic is met.",
+      "$ref": "https://fhir.opennz.org/Duration"
+    },
+    "durationRange": {
+      "description": "Length of time in which the characteristic is met.",
+      "$ref": "https://fhir.opennz.org/Range"
+    },
+    "period": {
+      "description": "The period over which the characteristic is tested; e.g. the patient had an operation during the month of June.",
+      "$ref": "https://fhir.opennz.org/Period"
+    },
+    "timing": {
+      "description": "Timing in which the characteristic is determined.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/RelativeTime"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "code"
+  ]
+}

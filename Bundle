@@ -1,0 +1,88 @@
+{
+  "description": "A container for a collection of resources.",
+  "properties": {
+    "resourceType": {
+      "description": "This is a Bundle resource",
+      "const": "Bundle"
+    },
+    "id": {
+      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+      "$ref": "https://fhir.opennz.org/id"
+    },
+    "meta": {
+      "description": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.",
+      "$ref": "https://fhir.opennz.org/Meta"
+    },
+    "implicitRules": {
+      "description": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.",
+      "$ref": "https://fhir.opennz.org/uri"
+    },
+    "_implicitRules": {
+      "description": "Extensions for implicitRules",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "language": {
+      "description": "The base language in which the resource is written.",
+      "$ref": "https://fhir.opennz.org/code"
+    },
+    "_language": {
+      "description": "Extensions for language",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "identifier": {
+      "description": "A persistent identifier for the bundle that won't change as a bundle is copied from server to server.",
+      "$ref": "https://fhir.opennz.org/Identifier"
+    },
+    "type": {
+      "description": "Indicates the purpose of this bundle - how it is intended to be used.",
+      "$ref": "https://fhir.opennz.org/code"
+    },
+    "_type": {
+      "description": "Extensions for type",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "timestamp": {
+      "description": "The date/time that the bundle was assembled - i.e. when the resources were placed in the bundle.",
+      "$ref": "https://fhir.opennz.org/instant"
+    },
+    "_timestamp": {
+      "description": "Extensions for timestamp",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "total": {
+      "description": "If a set of search matches, this is the (potentially estimated) total number of entries of type 'match' across all pages in the search.  It does not include search.mode = 'include' or 'outcome' entries and it does not provide a count of the number of entries in the Bundle.",
+      "$ref": "https://fhir.opennz.org/unsignedInt"
+    },
+    "_total": {
+      "description": "Extensions for total",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "link": {
+      "description": "A series of links that provide context to this bundle.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Bundle_Link"
+      },
+      "type": "array"
+    },
+    "entry": {
+      "description": "An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Bundle_Entry"
+      },
+      "type": "array"
+    },
+    "signature": {
+      "description": "Digital Signature - base64 encoded. XML-DSig or a JWS.",
+      "$ref": "https://fhir.opennz.org/Signature"
+    },
+    "issues": {
+      "description": "Captures issues and warnings that relate to the construction of the Bundle and the content within it.",
+      "$ref": "https://fhir.opennz.org/ResourceList"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "resourceType"
+  ]
+}

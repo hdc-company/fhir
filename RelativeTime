@@ -1,0 +1,61 @@
+{
+  "description": "RelativeTime is used to express a point in time or an interval of time relative to an event defined in data types other than dateTime.",
+  "properties": {
+    "id": {
+      "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "extension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "modifierExtension": {
+      "description": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "items": {
+        "$ref": "https://fhir.opennz.org/Extension"
+      },
+      "type": "array"
+    },
+    "contextReference": {
+      "description": "The specific event occurrence or resource context used as a base point (reference point) in time.  This establishes the context in which the 'path' is evaluated.",
+      "$ref": "https://fhir.opennz.org/Reference"
+    },
+    "contextDefinition": {
+      "description": "The type of event used as a base point.  Instances of this definition will establish the context for evaluating the path to determine the base time for the offset.",
+      "$ref": "https://fhir.opennz.org/canonical"
+    },
+    "contextPath": {
+      "description": "Path to the element defining the point in time. Any valid FHIRPath expression.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "_contextPath": {
+      "description": "Extensions for contextPath",
+      "$ref": "https://fhir.opennz.org/Element"
+    },
+    "contextCode": {
+      "description": "Coded representation of the event used as a base point (reference point) in time.",
+      "$ref": "https://fhir.opennz.org/CodeableConcept"
+    },
+    "offsetDuration": {
+      "description": "An offset or offset range before (negative values) or after (positive values) the event. Range is limited to time-valued quantities (Durations).",
+      "$ref": "https://fhir.opennz.org/Duration"
+    },
+    "offsetRange": {
+      "description": "An offset or offset range before (negative values) or after (positive values) the event. Range is limited to time-valued quantities (Durations).",
+      "$ref": "https://fhir.opennz.org/Range"
+    },
+    "text": {
+      "description": "Free-text (human-readable) description.",
+      "$ref": "https://fhir.opennz.org/string"
+    },
+    "_text": {
+      "description": "Extensions for text",
+      "$ref": "https://fhir.opennz.org/Element"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false
+}
