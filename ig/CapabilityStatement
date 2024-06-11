@@ -1,0 +1,18 @@
+{
+  "description": "A Capability Statement documents a set of capabilities (behaviors) of a FHIR Server or Client for a particular version of FHIR that may be used as a statement of actual server functionality or a statement of required or desired server implementation.",
+  "properties": {
+    "resourceType": {
+      "description": "This is a CapabilityStatement resource",
+      "const": "CapabilityStatement"
+    },
+    "id": {
+      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+      "$ref": "https://fhir.opennz.org/id"
+   }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "resourceType"
+  ]
+}

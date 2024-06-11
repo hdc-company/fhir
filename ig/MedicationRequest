@@ -1,0 +1,20 @@
+{
+  "description": "An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called \"MedicationRequest\" rather than \"MedicationPrescription\" or \"MedicationOrder\" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.",
+  "properties": {
+    "resourceType": {
+      "description": "This is a MedicationRequest resource",
+      "const": "MedicationRequest"
+    },
+    "id": {
+      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+      "$ref": "https://fhir.opennz.org/id"
+   }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "subject",
+    "medication",
+    "resourceType"
+  ]
+}
