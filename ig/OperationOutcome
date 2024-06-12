@@ -2,8 +2,7 @@
   "description": "A collection of error, warning, or information messages that result from a system action.",
   "properties": {
     "resourceType": {
-      "description": "This is a OperationOutcome resource",
-      "const": "OperationOutcome"
+      "description": "This is a OperationOutcome resource"
     },
     "id": {
       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",

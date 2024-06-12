@@ -2,8 +2,7 @@
   "description": "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.",
   "properties": {
     "resourceType": {
-      "description": "This is a Condition resource",
-      "const": "Condition"
+      "description": "This is a Condition resource"
     },
     "id": {
       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
