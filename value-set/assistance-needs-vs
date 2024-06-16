@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "assistance-needs-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-assistance-needs-cs.html\"><code>https://fhir.opennz.org/code-system/assistance-needs-cs</code></a></li></ul></div>"
+  },
+  "url" : "https://fhir.opennz.org/value-set/assistance-needs-vs",
+  "version" : "0.0.1",
+  "name" : "AssistanceNeedsValueSet",
+  "title" : "Assistance Needs ValueSet",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-06-14T13:46:33+12:00",
+  "description" : "A ValueSet including all codes from the Assistance Needs CodeSystem.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.opennz.org/code-system/assistance-needs-cs"
+    }]
+  }
+}
